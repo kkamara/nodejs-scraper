@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-scraper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkamara/nodejs-scraper.git"
+  },
+  "author": "https://github.com/kkamara",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/kkamara/nodejs-scraper/issues"
+  },
+  "homepage": "https://github.com/kkamara/nodejs-scraper#readme",
+  "dependencies": {
+    "nightmare": "^3.0.2"
+  }
+}
