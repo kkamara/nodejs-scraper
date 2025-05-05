@@ -1,10 +1,11 @@
 {
   "name": "nodejs-scraper",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "(2022) Use JavaScript technologies to crawl and click buttons on websites with GUI.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn node app.js"
   },
   "repository": {
     "type": "git",

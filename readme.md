@@ -1,21 +1,21 @@
 # nodejs-scraper
 
-Use javascript technologies to crawl and click buttons on websites with gui.
+(2022) Use JavaScript technologies to crawl and click buttons on websites with GUI.
 
 ## Installation
 
-* [Node.js](https://nodejs.org/en/)
-* [pNpM](https://pnpm.io/)
+* [Node.js](https://nodejs.org/en/).
 
 ```bash
   cp .env.example .env
-  pnpm install
+  npm install --global yarn
+  yarn install
 ```
 
 ## Usage
 
 ```bash
-  node app.js
+  yarn start
 ```
 
 ## Misc
