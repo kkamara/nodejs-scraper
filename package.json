@@ -17,5 +17,7 @@
     "url": "https://github.com/kkamara/nodejs-scraper/issues"
   },
   "homepage": "https://github.com/kkamara/nodejs-scraper#readme",
-  "dependencies": {}
+  "dependencies": {
+    "selenium-webdriver": "^4.32.0"
+  }
 }
