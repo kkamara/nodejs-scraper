@@ -2,9 +2,23 @@
 
 (2022) Use JavaScript technologies to crawl and click buttons on websites with GUI.
 
+* [Important note:](#note)
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Contributing](#contributing)
+
+* [License](#license)
+
+## Important note: <a name="note"></a>
+
+Before you try to scrape any website, go through its robots.txt file. You can access it via `domainname/robots.txt`. There, you will see a list of pages allowed and disallowed for scraping. You should not violate any terms of service of any website you scrape.
+
 ## Installation
 
-* [Node.js](https://nodejs.org/en/).
+* [NodeJS](https://nodejs.org/en).
 
 ```bash
   cp .env.example .env
@@ -12,19 +26,23 @@
   yarn install
 ```
 
+#### Download Selenium Server jar file
+
+[Download Selenium Server jar file](https://www.selenium.dev/documentation/grid/getting_started/).
+
+Run the following in a new terminal.
+
+```bash
+  java -jar selenium-server-4.29.0.jar standalone --override-max-sessions true --max-sessions 10
+```
+
+[CLI options in the Selenium Grid](https://www.selenium.dev/documentation/grid/configuration/cli_options/).
+
 ## Usage
 
 ```bash
   yarn start
 ```
-
-## Misc
-
-[See react boilerplate.](https://github.com/kkamara/react-boilerplate)
-
-[See php scraper.](https://github.com/kkamara/php-scraper)
-
-[See node react boilerplate.](https://github.com/kkamara/node-react-boilerplate)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
