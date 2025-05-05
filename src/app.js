@@ -1,6 +1,12 @@
 "use strict";
 const path = require("node:path");
-const { Builder, Browser, } = require("selenium-webdriver");
+const fs = require("node:fs");
+const {
+  Builder,
+  Browser,
+  By,
+  WebDriver,
+} = require("selenium-webdriver");
 const dotenv = require("dotenv");
 const capabilities = require("./capabilities");
 
@@ -19,9 +25,25 @@ const run = async () => {
     .usingServer(process.env.SELENIUM_GRID_URL)
     .build();
 
-  await driver.get("https://www.selenium.dev/selenium/web/blank.html");
+  await driver.get("https://www.imdb.com/search/name/?birth_monthday=12-10");
 
-  await wait(5000); // Sleep for 5 seconds.
+  await wait(1000);
+
+  const acceptBtn = await driver
+    .findElement(By.xpath("//button[@data-testid='reject-button']"));
+  
+  await acceptBtn.click();
+
+  await wait(1000); // Sleep for 5 seconds.
+
+  await takeScreenshot(
+    path.join(
+      __dirname,
+      "..",
+      "screenshot.png",
+    ),
+    driver,
+  );
 
   await driver.quit();
 };
@@ -33,6 +55,15 @@ const wait = async (milliSeconds) => {
   await new Promise((resolve, reject) => {
     setTimeout(() => resolve(), milliSeconds);
   });
+};
+
+/**
+ * @param {string} filePath
+ * @param {WebDriver} driver
+ */
+const takeScreenshot = async (filePath, driver) => {
+  const b64Image = await driver.takeScreenshot();
+  fs.writeFileSync(filePath, b64Image, "base64");
 };
 
 run();
