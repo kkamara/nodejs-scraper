@@ -27,7 +27,7 @@ const run = async () => {
 
   await driver.get("https://www.imdb.com/search/name/?birth_monthday=12-10");
 
-  await wait(1000); // Sleep for 1 seconds.
+  await wait(1000); // Sleep for 1 second.
 
   const acceptBtn = await driver
     .findElement(By.xpath("//button[@data-testid='reject-button']"));
