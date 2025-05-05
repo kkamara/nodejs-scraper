@@ -12,7 +12,7 @@ if (parseEnvFile.error) {
   throw parseEnvFile.error;
 }
 
-(async function helloSelenium() {
+const run = async () => {
   let driver = new Builder()
     .withCapabilities(capabilities)
     .forBrowser(Browser.CHROME)
@@ -24,7 +24,7 @@ if (parseEnvFile.error) {
   await wait(5000); // Sleep for 5 seconds.
 
   await driver.quit();
-})();
+};
 
 /**
  * @param {number} milliSeconds
@@ -34,3 +34,5 @@ const wait = async (milliSeconds) => {
     setTimeout(() => resolve(), milliSeconds);
   });
 };
+
+run();
