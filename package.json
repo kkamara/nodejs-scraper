@@ -17,7 +17,5 @@
     "url": "https://github.com/kkamara/nodejs-scraper/issues"
   },
   "homepage": "https://github.com/kkamara/nodejs-scraper#readme",
-  "dependencies": {
-    "nightmare": "^3.0.2"
-  }
+  "dependencies": {}
 }
