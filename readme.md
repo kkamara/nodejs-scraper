@@ -1,3 +1,5 @@
+<img src="https://github.com/kkamara/useful/raw/main/nodejs-scraper.gif" alt="nodejs-scraper.gif" width=""/>
+
 # nodejs-scraper
 
 (2022) Use JavaScript technologies to crawl and click buttons on websites with GUI. Tested on Windows and Ubuntu Linux.
