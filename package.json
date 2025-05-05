@@ -1,7 +1,7 @@
 {
   "name": "nodejs-scraper",
   "version": "0.1.0",
-  "description": "(2022) Use JavaScript technologies to crawl and click buttons on websites with GUI.",
+  "description": "(2022) Use JavaScript technologies to crawl and click buttons on websites with GUI. Tested on Windows and Ubuntu Linux.",
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
