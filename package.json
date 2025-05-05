@@ -1,10 +1,11 @@
 {
   "name": "nodejs-scraper",
-  "version": "0.0.1",
-  "description": "",
-  "main": "app.js",
+  "version": "0.1.0",
+  "description": "(2022) Use JavaScript technologies to crawl and click buttons on websites with GUI.",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/kkamara/nodejs-scraper#readme",
   "dependencies": {
-    "nightmare": "^3.0.2"
+    "dotenv": "^16.5.0",
+    "selenium-webdriver": "^4.32.0"
   }
 }
