@@ -29,10 +29,13 @@ const run = async () => {
 
   await wait(1000); // Sleep for 1 second.
 
-  const acceptBtn = await driver
-    .findElement(By.xpath("//button[@data-testid='reject-button']"));
+  const titleElement = await driver
+    .findElement(By.xpath(
+      "//h1[contains(@class, 'ipc-title__text')]"
+  ));
   
-  await acceptBtn.click();
+  const titleText = await titleElement.getText();
+  console.log("Title text: " + titleText);
 
   await wait(1000);
 
