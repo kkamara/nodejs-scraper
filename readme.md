@@ -2,7 +2,7 @@
 
 # nodejs-scraper
 
-(2022) Use JavaScript technologies to crawl and click buttons on websites with GUI. Tested on Windows and Ubuntu Linux.
+:office: (28-Nov-2022) Use JavaScript technologies to crawl and click buttons on websites with GUI. Tested on Windows and Ubuntu Linux.
 
 * [Important note:](#note)
 
