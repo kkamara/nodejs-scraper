@@ -20,12 +20,13 @@ Before you try to scrape any website, go through its robots.txt file. You can ac
 
 ## Installation
 
-* [NodeJS](https://nodejs.org/en).
+* [NodeJS](https://nodejs.org/en)
+* [Java](https://www.java.com/en/)
 
 ```bash
-  cp .env.example .env
-  npm install --global yarn
-  yarn install
+cp .env.example .env
+npm install --global yarn
+yarn
 ```
 
 #### Download Selenium Server jar file
@@ -35,7 +36,7 @@ Before you try to scrape any website, go through its robots.txt file. You can ac
 Run the following in a new terminal.
 
 ```bash
-  java -jar selenium-server-4.29.0.jar standalone --override-max-sessions true --max-sessions 10
+java -jar selenium-server-4.29.0.jar standalone --override-max-sessions true --max-sessions 10
 ```
 
 [CLI options in the Selenium Grid](https://www.selenium.dev/documentation/grid/configuration/cli_options/).
@@ -43,7 +44,7 @@ Run the following in a new terminal.
 ## Usage
 
 ```bash
-  yarn start
+yarn start
 ```
 
 ## Contributing

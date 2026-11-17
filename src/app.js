@@ -25,28 +25,19 @@ const run = async () => {
     .usingServer(process.env.SELENIUM_GRID_URL)
     .build();
 
-  await driver.get("https://www.imdb.com/search/name/?birth_monthday=12-10");
-
-  await wait(1000); // Sleep for 1 second.
-
-  const titleElement = await driver
-    .findElement(By.xpath(
-      "//h1[contains(@class, 'ipc-title__text')]"
-  ));
-  
-  const titleText = await titleElement.getText();
-  console.log("Title text: " + titleText);
-
-  await wait(1000);
+  await driver.get("https://www.kelvinkamara.com");
 
   await takeScreenshot(
-    path.join(
-      __dirname,
-      "..",
-      "screenshot.png",
-    ),
+    path.join(__dirname, "../screenshot.png"),
     driver,
   );
+
+  await driver
+    .findElement(By.xpath(
+      "//a[@id='contact-me-link']"
+  )).click();
+
+  await wait(1000);
 
   await driver.quit();
 };
